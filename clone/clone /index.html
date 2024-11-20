@@ -1,0 +1,127 @@
+@@ -0,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="popupForm" class="main_curd" >
+      <form action=""  name="sample" method="post" class="form_popup" >
+        <span id="closeFormButton" class="close" >&times;</span>
+        <h1>Registration form</h1>
+        <label>First name :</label>
+        <input
+          id="input1"
+          name="firstname"
+          type="text"
+          placeholder="First name"
+        />
+        <br />
+        <br />
+        <label>Second name :</label>
+        <input
+          id="input2"
+          name="second_name"
+          type="text"
+          placeholder="Second name"
+        />
+        <br />
+        <br />
+        <label>Father name :</label>
+        <input
+          id="input3"
+          name="farher_name"
+          type="text"
+          placeholder="Father name"
+        />
+        <br />
+        <br />
+        <label>Adrees :</label>
+        <input id="input4" name="address" type="text" placeholder="Adress" />
+        <br />
+        <br />
+        <label>Gender</label>
+        <span>Male</span>
+        <input
+          type="radio"
+          id="male"
+          name="registraion"
+          value="male"
+          class="radio"
+        />
+        <span>Female</span>
+        <input
+          type="radio"
+          id="female"
+          name="registraion"
+          value="female"
+          class="radio"
+        />
+        <br />
+        <br />
+        <label>Email id :</label>
+        <input id="input7" name="email" type="email" placeholder="email" />
+        <br />
+        <br />
+        <label>Mobile no :</label>
+        <input
+          id="input8"
+          name="mobile_no"
+          type="text"
+          placeholder="mobile no"
+        />
+        <br />
+        <br />
+        <button type="button"  class="button button1" onclick="addstudent()">
+          Submit
+        </button>
+      </form>
+    </div>
+    <table id="tbl">
+      <thead>
+        <tr>
+          <th>First name</th>
+          <th>Second name</th>
+          <th>Father name</th>
+          <th>Adress</th>
+          <th>Gender</th>
+          <th>Email</th>
+          <th>Mobile no</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ram</td>
+          <td>raj</td>
+          <td>zcdcs</td>
+          <td>jalalabad</td>
+          <td>male</td>
+          <td>fsdf@gmail.com</td>
+          <td>6541521564</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>jk</td>
+          <td>nk</td>
+          <td>fdsfsa</td>
+          <td>dullahpur</td>
+          <td>female</td>
+          <td>nk@gmail.com</td>
+          <td>654145498</td> <br> <br>
+          <td><input type="checkbox"></td>
+        </tr>
+        
+        
+        
+      </tbody>
+    </table>
+    <button id="openFormButton" class="create_button">open form</button>
+    <br />
+    <br />
+    <button>Edit</button>
+    <script src="script.js"></script>
+  </body>
+</html>
