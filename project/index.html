@@ -9,15 +9,18 @@
   <body>
     <div class="psrent_div">
       <div style="width: 50%">
-        <button id="openFormButton"  class="Add_employe">
-          Add Employe
-        </button>
+        <button id="openFormButton" class="Add_employe">Add Employe</button>
       </div>
       <div class="right_div">
         <div class="left_section">
           <div>
             <form>
-              <input class="input_searchbar" type="text" name="search" placeholder="Search..">
+              <input
+                class="input_searchbar"
+                type="text"
+                name="search"
+                placeholder="Search.."
+              />
             </form>
           </div>
           <svg
@@ -57,18 +60,14 @@
           <td id="eight_valuse"></td>
          
         </tr> -->
-        <tr>
-          
-        </tr>
-       
+        <tr></tr>
       </table>
     </div>
     <div id="popupForm" class="form_Section">
       <span id="closeFormButton" class="close">&times;</span>
       <h1 class="registraion">Registraion form</h1>
-      
+
       <form action="" class="form_label">
-       
         <label for="">First_name</label>
         <input id="first_name" type="text" /> <br />
         <label for="">Second_name</label>
@@ -83,13 +82,22 @@
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Other">Other</option>
-      </select> <br>
+        </select>
+        <br />
         <label for="">Email_id</label>
         <input id="email" type="email" /> <br />
         <label for="">Mobile_no</label>
         <input id="mobile_no" type="text" /> <br />
-       
-        <button class="button_section" type="button" onclick="storeInput()">Submit</button>
+        ,
+
+        <button
+          class="button_section"
+          id="submitButton"
+          type="button"
+          onclick="storeInput();myFunction()"
+        >
+          Submit
+        </button>
       </form>
     </div>
     <script src="app.js"></script>

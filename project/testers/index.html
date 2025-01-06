@@ -1,13 +1,345 @@
-<table id="myTable">
-  <tr>
-    <td>Data 1</td>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .psrent_div {
+        display: flex;
+      }
+      .right_div {
+        width: 50%;
+      }
+      .icon {
+        width: 5%;
+        color: green;
+        /* margin-top: 10px; */
+        margin-left: 10px;
+        margin-top: 7px;
+      }
+      .Add_employe {
+        margin: 50px;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        /* font-weight: bold; */
+        cursor: pointer;
+      }
+      .left_section {
+        margin: 50px;
+      }
+      .search_bar {
+        margin-left: 20px;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+      }
+      .left_section {
+        display: flex;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
 
-    <td><button class="deleteBtn">Delete</button></td>
-  </tr>
+      .table {
+        width: 100%;
+        font-size: 25px;
+      }
+      .registraion {
+        text-align: center;
+        background-color: antiquewhite;
+      }
+      .form_Section {
+        width: 30%;
+        display: none;
+        margin: 50px;
+        background-color: aqua;
+      }
+      label {
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 30px;
+      }
+      input {
+        padding: 5px;
+      }
+      span {
+        font-size: 20px;
+      }
+      .form_label {
+        background-color: aquamarine;
+      }
+      .close {
+        float: right;
+        cursor: pointer;
+        height: 20px;
+      }
+      .button_section {
+        /* float: right; */
+        margin-top: 10px;
+        margin-left: 450px;
+      }
 
-  <tr>
-    <td>Data 2</td>
+      .input_searchbar {
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url("magnifying-glass-icon-isolated-on-white-background-search-illustration-vector.jpg");
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+      }
+    </style>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      <body>
+        <div class="psrent_div">
+          <div style="width: 50%">
+            <button id="openFormButton" class="Add_employe">Add Employe</button>
+          </div>
+          <div class="right_div">
+            <div class="left_section">
+              <div>
+                <form>
+                  <input
+                    class="input_searchbar"
+                    type="text"
+                    name="search"
+                    placeholder="Search.."
+                  />
+                </form>
+              </div>
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="form_filed">
+          <table class="table" id="store">
+            <tr>
+              <th>Sr no.</th>
+              <th>First_name</th>
+              <th>Second_name</th>
+              <th>Father_name</th>
+              <th>Adress</th>
+              <th>Gender</th>
+              <th>Email_id</th>
+              <th>Mobile_no</th>
+              <th>Action</th>
+            </tr>
+            <!-- <tr>
+            <td id="first_valus"></td>
+            <td id="second_valuse"></td>
+            <td id="third_valuse"></td>
+            <td id="fourth_valuse"></td>
+            <td id="fifth_valuse"></td>
+            <td id="sixth_valuse"></td>
+            <td id="seventh_valuse"></td>
+            <td id="eight_valuse"></td>
+           
+          </tr> -->
+            <tr></tr>
+          </table>
+        </div>
+        <div id="popupForm" class="form_Section">
+          <span id="closeFormButton" class="close">&times;</span>
+          <h1 class="registraion">Registraion form</h1>
 
-    <td><button class="deleteBtn">Delete</button></td>
-  </tr>
-</table>
+          <form action="" class="form_label">
+            <label for="">First_name</label>
+            <input id="first_name" type="text" /> <br />
+            <label for="">Second_name</label>
+            <input id="second_name" type="text" /> <br />
+            <label for="">Father_name</label>
+            <input id="Father_name" type="text" /> <br />
+            <label for="">Adress</label>
+            <input id="adress" type="text" /> <br />
+            <label for="">Gender :</label>
+            <select id="gender" required>
+              <option value="">Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+            <br />
+            <label for="">Email_id</label>
+            <input id="email" type="email" /> <br />
+            <label for="">Mobile_no</label>
+            <input id="mobile_no" type="text" /> <br />
+            ,
+
+            <button
+              class="button_section"
+              id="submitButton"
+              type="button"
+              onclick="storeInput();myFunction()"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <script src="app.js"></script>
+      </body>
+    </html>
+<script>
+    document.getElementById("openFormButton").onclick = function () {
+      document.getElementById("popupForm").style.display = "block";
+  };
+  
+  document.getElementById("closeFormButton").onclick = function () {
+      document.getElementById("popupForm").style.display = "none";
+  };
+  
+  var id = 0;
+  var isEditMode = false;  // Flag to check if we are in edit mode
+  var editRowIndex = null;  // To store the index of the row to be edited
+  
+  function storeInput() {
+      var firstname = document.getElementById("first_name");
+      var second_name = document.getElementById("second_name");
+      var Father_name = document.getElementById("Father_name");
+      var Adress = document.getElementById("adress");
+      var Gender = document.getElementById("gender");
+      var email = document.getElementById("email");
+      var Mobile = document.getElementById("mobile_no");
+  
+      var value1 = firstname.value;
+      var value2 = second_name.value;
+      var value3 = Father_name.value;
+      var value4 = Adress.value;
+      var value5 = Gender.value;
+      var value6 = email.value;
+      var value7 = Mobile.value;
+  
+      if (
+          !firstname.value ||
+          !second_name.value ||
+          !Father_name.value ||
+          !Adress.value ||
+          !Gender.value ||
+          !email.value ||
+          !Mobile.value
+      ) {
+          alert("Please fill in all fields!");
+          return;
+      }
+  
+      // If in Edit mode, update the row
+      if (isEditMode) {
+          var displayTable = document.getElementById("store");
+          var row = displayTable.rows[editRowIndex];
+          row.cells[1].innerHTML = value1;
+          row.cells[2].innerHTML = value2;
+          row.cells[3].innerHTML = value3;
+          row.cells[4].innerHTML = value4;
+          row.cells[5].innerHTML = value5;
+          row.cells[6].innerHTML = value6;
+          row.cells[7].innerHTML = value7;
+  
+          // Reset to normal mode
+          isEditMode = false;
+          editRowIndex = null;
+          document.getElementById("popupForm").style.display = "none";
+      } else {
+          id++;
+          var inputValuse = {
+              id,
+              value1,
+              value2,
+              value3,
+              value4,
+              value5,
+              value6,
+              value7,
+          };
+  
+          var displayTable = document.getElementById("store");
+          var newRow = displayTable.insertRow(id);
+          var cell1 = newRow.insertCell(0);
+          var cell2 = newRow.insertCell(1);
+          var cell3 = newRow.insertCell(2);
+          var cell4 = newRow.insertCell(3);
+          var cell5 = newRow.insertCell(4);
+          var cell6 = newRow.insertCell(5);
+          var cell7 = newRow.insertCell(6);
+          var cell8 = newRow.insertCell(7);
+          var cell9 = newRow.insertCell(8);
+  
+          cell1.innerHTML = id;
+          cell2.innerHTML = value1;
+          cell3.innerHTML = value2;
+          cell4.innerHTML = value3;
+          cell5.innerHTML = value4;
+          cell6.innerHTML = value5;
+          cell7.innerHTML = value6;
+          cell8.innerHTML = value7;
+  
+          // Create Edit and Delete buttons
+          var editButton = document.createElement("button");
+          editButton.innerHTML = "Edit";
+          editButton.onclick = function () {
+              // Edit functionality
+              isEditMode = true; // Set to edit mode
+              editRowIndex = newRow.rowIndex; // Store the row index
+  
+              // Populate the form with current row data
+              document.getElementById("first_name").value = value1;
+              document.getElementById("second_name").value = value2;
+              document.getElementById("Father_name").value = value3;
+              document.getElementById("adress").value = value4;
+              document.getElementById("gender").value = value5;
+              document.getElementById("email").value = value6;
+              document.getElementById("mobile_no").value = value7;
+  
+              // Open the form
+              document.getElementById("popupForm").style.display = "block";
+          };
+  
+          var deleteButton = document.createElement("button");
+          deleteButton.innerHTML = "Delete";
+          deleteButton.onclick = function () {
+              // Delete functionality
+              displayTable.deleteRow(newRow.rowIndex); // Delete the row
+          };
+  
+          // Add buttons to the Action cell (cell9)
+          cell9.appendChild(editButton);
+          cell9.appendChild(deleteButton);
+      }
+  
+      // Clear form fields after submit
+      firstname.value = "";
+      second_name.value = "";
+      Father_name.value = "";
+      Adress.value = "";
+      Gender.value = "";
+      email.value = "";
+      Mobile.value = "";
+  }
+</script>
+  
+    
+  </body>
+</html>
