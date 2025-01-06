@@ -1,0 +1,53 @@
+/* .container{
+          width: 100%;
+          min-height: 100vh;
+          background: linear-gradient(135deg,#153677,#4e085f);
+} */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+}
+.parent_div {
+  width: 30%;
+  height: 500px;
+  margin-left: 500px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.todo_list {
+  background-color: red;
+  margin-left: 50px;
+}
+.input_area {
+  margin-left: 20px;
+  padding: 6px;
+  width: 89%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.button_addTask {
+  padding: 6px;
+  border: none;
+  background-color: blue;
+  color: white;
+  margin-left: -72px;
+  cursor: pointer;
+  border-right: 5px;
+}
+button{
+          cursor: pointer;
+          width: 70px;
+          padding: 5px;
+          color: blue;
+          border-radius: 5px;
+          /* border-color: blue; */
+          border: 1px solid blue;
+          
+}
+button:hover{
+          background-color: blue;
+          color: white;
+}
