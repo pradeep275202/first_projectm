@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  function addRowToTable() {
+
+    // Get the table element
+  
+    let table = document.getElementById("myTable");
+  
+  
+  
+    // Create a new row
+  
+    let newRow = document.createElement("tr");
+  
+  
+  
+    // Get input values
+  
+    let input1 = document.getElementById("input1").value;
+  
+    let input2 = document.getElementById("input2").value;
+  
+  
+  
+    // Create table cells and populate with input values
+  
+    let cell1 = document.createElement("td");
+  
+    cell1.textContent = input1;
+  
+    let cell2 = document.createElement("td");
+  
+    cell2.textContent = input2;
+  
+  
+  
+    // Append cells to the row
+  
+    newRow.appendChild(cell1);
+  
+    newRow.appendChild(cell2);
+  
+  
+  
+    // Append the new row to the table
+  
+    table.appendChild(newRow);
+  
+  }
+  
+  
+  
+  // Example HTML (assuming a button with id "addButton" triggers the function)
+  
+  <table id="myTable"></table>
+  
+  <input type="text" id="input1">
+  
+  <input type="text" id="input2">
+  
+  <button onclick="addRowToTable()">Add Row</button>
+  
+  
+</body>
+</html></i>
