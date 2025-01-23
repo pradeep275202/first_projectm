@@ -1,15 +1,12 @@
-var inputValuse = document.getElementById("input")
-var createTable =document.getElementById("Create_table")
-var valueTable = createTable.value;
-var value =inputValuse.value;
-function showsInput(){
-
-          var newRow =document.createElement("tr")
-          var cell1 = document.createElement("td")
-          cell1.textContent= value;
-          newRow.appendChild(cell1);
-          table.appendChild(newRow)
-         
-
+function showinputValuse() {
+  var input = document.getElementById("input");
+  var inputValuse = input.value;
+  console.log(inputValuse)
+  
+  var table = document.createElement("table")
+  table.style.border ='1'
+  var tr = document.createElement("tr")
+  tr.innerText ="inputValuse"
+  tr.appendChild(table)
 
 }
