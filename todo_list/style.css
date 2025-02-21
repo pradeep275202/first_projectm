@@ -9,8 +9,9 @@
   font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
 }
 .parent_div {
-  width: 30%;
-  height: 500px;
+  width: 33%;
+  height: 550px;
+  overflow: scroll;
   margin-left: 500px;
   background-color: white;
   border: 1px solid black;
@@ -51,3 +52,18 @@ button:hover{
           background-color: blue;
           color: white;
 }
+.newRow{
+  gap: 5px;
+  margin-top: 5px;
+}
+td{
+  width: 100%;
+}
+tr{
+  width: 100%;
+}
+
+
+
+
+

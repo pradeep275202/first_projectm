@@ -8,30 +8,30 @@
   </head>
   <body>
     <div class="container">
-      <div class="parent_div">
-        <div style="background-color: blue">
-          <h1 style="margin-left: 10px; color: white">Todo List</h1>
+      <!-- <form action=""> -->
+        <div class="parent_div" >
+          <div style="background-color: blue">
+            <h1 style="margin-left: 10px; color: white">Todo List</h1>
+          </div>
+          <div style="margin-top: 10px">
+            <input
+              id="input"
+              class="input_area"
+              placeholder="Add new Task....."
+            />
+            <button type="button" id="addButton" class="button_addTask" onclick="showinputValuse()" >
+              Add Task
+            </button>
+          </div>
+          <div style="margin-left: 20px; margin-top: 20px">
+            <button>All</button>
+            <button>Active</button>
+            <button  id="showDeletedData()" >Complited</button>
+          </div>
+          
+          <table id="Table_container"></table>
         </div>
-        <div style="margin-top: 10px">
-          <input
-            id="input"
-            class="input_area"
-            placeholder="Add new Task....."
-          />
-          <button class="button_addTask" onclick="showinputValuse()">
-            Add Task
-          </button>
-        </div>
-        <div style="margin-left: 20px; margin-top: 20px">
-          <button>All</button>
-          <button>Active</button>
-          <button>Complited</button>
-        </div>
-        <div id="Table_container">
-
-        </div>
-      </div>
-      
+      <!-- </form> -->
     </div>
     <script src="app.js"></script>
   </body>
